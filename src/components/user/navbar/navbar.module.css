@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.nav{
+
+   background-color: #111 !important;
+    color: #fff;
+    z-index: 100;
+
+  text-transform: capitalize;
+  
+}
+
+.nav.scrolled {
+    background-color: #111111e7 !important; /* لون غامق عند التمرير */
+    color: white;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5 ) !important; /* تأثير الظل */
+  }
+
+  
+ .nav a{
+    
+    font-size: 20px;
+   
+ }
+
+ .dropDownItem{
+    
+ }
+ .btn {
+    color: #fff !important;
+ }
+
+ 
+
+.nav a:hover{
+
+    color:#bc9c72 !important; 
+}
+
+
+
+
+.logo{
+
+    font-size: 40px !important;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 400;
+    
+}
+
+.logo:hover{
+    color: #bc9c72 !important;
+    cursor: pointer;
+}
+
+.NavDropdown{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 15px;
+}
+
+.active {
+    color: #bc9c72 !important; 
+    font-weight: 600; 
+    font-size: 30px;
+    text-decoration: underline;
+   
+  }
+
+
