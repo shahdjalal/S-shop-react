@@ -104,7 +104,7 @@ export default function Login() {
           journey today.
         </p>
 
-        <Link to={"/register"} className={`${style.link}`}>
+        <Link to={"/auth/register"} className={`${style.link}`}>
           Register
         </Link>
       </form>

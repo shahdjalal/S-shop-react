@@ -1,0 +1,13 @@
+.category{
+box-sizing: border-box;
+}
+
+img{
+    width:100%;
+}
+
+.title{
+    color: #bc9c72;
+ 
+    /* text-shadow: 2px  0px 1px rgba(255, 255, 255, 0.79); */
+} 

@@ -138,7 +138,7 @@ export default function Register() {
             easily.
           </p>
 
-          <Link to={"/login"} className={`${style.link}`}>
+          <Link to={"/auth/login"} className={`${style.link}`}>
             LogIn
           </Link>
         </form>

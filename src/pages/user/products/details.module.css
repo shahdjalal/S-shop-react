@@ -1,0 +1,91 @@
+.price{
+    color:#bc9c72;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subimg{
+    width: 20%;
+    margin: 7px;
+    filter: drop-shadow(0px 8px 10px rgba(255, 255, 255, 0.3));
+}
+
+.card{
+ box-shadow: 0px 8px 10px rgba(255, 255, 255, 0.3) !important
+}
+
+.btn{
+    background-color: #bc9c72 !important;
+    border: 1px solid #fff; 
+     width:100%;
+   
+     padding: 10px;
+     font-size: 20px;
+     font-weight: 600;
+
+}
+
+.btn:hover {
+    background-color: #a8835b;
+    border: 2px solid #fff; 
+    cursor: pointer;
+}
+
+ul{
+    margin-top: 150px !important;
+    
+}
+
+
+button{
+    color: #fff !important;
+    background-color: #111;
+}
+
+h3{
+    margin-top:  50px;
+  position: relative;
+    border-width: 30%;
+    padding: 10px;
+}
+
+.tabContent p{
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.tabContent{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+   
+}
+
+h3::after{
+    position: absolute;
+    content: "";
+    border-bottom:#bc9c72  3px solid ;
+    bottom: 0;
+    left: 46%;
+   height: 5px;
+   width: 7%;
+   
+    
+}
+
+/* details.module.css */
+.navLink {
+    color: white;
+    background-color: transparent; /* خلفية شفافة للتاب الغير نشط */
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navLinkActive {
+   
+    color:black !important; /* النص يصبح أبيض */
+    padding: 10px 15px; /* إضافة padding لزيادة المساحة في التاب */
+  }
+  

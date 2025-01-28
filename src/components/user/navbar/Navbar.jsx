@@ -42,63 +42,43 @@ export default function CustomNavbar() {
               Home
             </Nav.Link>
 
-            <NavDropdown title="Shop" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" className="dropDownItem">
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" className="dropDownItem">
-                Something
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4" className="dropDownItem">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link
+              as={Link}
+              to={"/products"}
+              className={`${navbar.btn} ${isActive("/products") ? navbar.active : ""}`}
+            >
+              shop
+            </Nav.Link>
 
-            <NavDropdown title="Pages" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" className="dropDownItem">
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className="dropDownItem">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" className="dropDownItem">
-                Something
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4" className="dropDownItem">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link
+              as={Link}
+              to={"/products"}
+              className={`${navbar.btn} ${isActive("/products") ? navbar.active : ""}`}
+            >
+              products
+            </Nav.Link>
 
-            <NavDropdown title="Categories" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link
+              as={Link}
+              to={"/categories"}
+              className={`${navbar.btn} ${isActive("/categories") ? navbar.active : ""}`}
+            >
+              categories
+            </Nav.Link>
           </div>
           <Nav className="ms-auto">
             <Nav.Link
               as={Link}
-              to={"/login"}
-              className={`${navbar.btn} ${isActive("/login") ? navbar.active : ""}`}
+              to={"/auth/login"}
+              className={`${navbar.btn} ${isActive("/auth/login") ? navbar.active : ""}`}
             >
               Login
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to={"/register"}
+              to={"/auth/register"}
               className={`${navbar.btn} ${
-                isActive("/register") ? navbar.active : ""
+                isActive("/auth/register") ? navbar.active : ""
               }`}
             >
               Register
