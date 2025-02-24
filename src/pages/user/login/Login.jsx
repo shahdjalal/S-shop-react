@@ -103,10 +103,13 @@ export default function Login() {
           your order history. Fill in the form below to join us and start your
           journey today.
         </p>
-
+       
         <Link to={"/auth/register"} className={`${style.link}`}>
           Register
         </Link>
+
+
+        <Link to={"/auth/sendcode"} className={`${style.password}`}> forgot your password ?</Link>
       </form>
       </Container>
     </>

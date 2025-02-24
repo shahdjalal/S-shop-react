@@ -1,0 +1,21 @@
+.table-container {
+   
+    max-width: 100%;    
+}
+
+.tableTransparent {
+    min-width: 600px;
+    white-space: nowrap;
+    margin-left: 20px;
+
+}
+
+
+.tableTransparent th, 
+.tableTransparent td {
+    background-color: transparent !important;
+    color: white !important;
+    text-align: center;
+}
+
+

@@ -1,0 +1,17 @@
+.tableTransparent {
+    background-color: #111!important; /* خلفية شفافة */
+    border-radius: 10%;
+}
+
+.tableTransparent th, 
+.tableTransparent td {
+    background-color: transparent !important; /* جعل الخلايا شفافة */
+    color: white !important; /* التأكد من وضوح النص */
+}
+
+.FloatingLabel label {
+    text-shadow: none !important;
+    background-color: transparent !important;
+    color: white !important;
+  }
+  

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+VN:wght@100..400&display=swap');
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./bg.avif');
+    z-index: -1;
+    background-size: cover;
+}
+
+.title {
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding: 6px 9px;
+    color: rgb(227, 187, 135);
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title h1 {
+    font-size: 80px !important;
+}
+
+.slider {
+    height: 100%;
+    padding: 100px 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s;
+    z-index: 10;
+}
+
+.arrow:hover {
+    /* يمكنك إضافة تأثير hover هنا */
+}
+
+.arrow {
+    background-color: transparent;
+}
+
+.leftArrow {
+    left: 4%;
+}
+
+.rightArrow {
+    right: 4%;
+}
+
+.mainImg {
+    width: auto;
+    border-radius: 4%;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.Btn:hover{
+background-color: #c8a165;
+transform: translateY(-5px);
+}
+.subTitle{
+  font-size: 30px;
+  letter-spacing: 3px;
+  padding: 6px 9px;
+  color: rgb(227, 187, 135);
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 20px;
+}
+
+.product {
+  position: relative;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./images.jpeg');
+  z-index: -1;
+  background-size: cover;
+  background-position: center -80px;
+}
+
+
+.price{
+  color:rgb(208, 170, 121) ;
+}
+
+.products h1{
+  display: none;
+}
+
+.productBtn{
+  font-size: 20px;
+}
+
+.productBtn:hover {
+  background-color: #c8a065db !important;
+  transform: translateY(-5px);
+
+}
+
+.testimonials {
+
+  color: #fff;           
+}
+
+.testimonialBox {
+  background-color: transparent; 
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* تأثير بسيط عند التحويم */
+.testimonialBox:hover {
+  transform: translateY(-5px);
+}
+
+/* لضبط ألوان النصوص داخل الكارت */
+.testimonialBox p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.testimonialBox h5 {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+
+
+.imagesWrapper {
+  /* يمكن إضافة تنسيقات إضافية إذا رغبت */
+}
+
+.productImageLarge {
+  width: 50%;
+  height:50%;
+  object-fit: cover;
+}
+
+.productImageMedium {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+
+
+/* نص الفقرة */
+.sectionText {
+  line-height: 1.7;
+  max-width: 500px;
+  margin: 0 auto 1.5rem auto; 
+}
+
+
+.storyButton {
+  background-color: #c8a165 ;
+  border: 1px #fff solid;
+  color: #fff;
+  padding: 12px 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.storyButton:hover{
+  background-color: #c8a065db !important;
+  transform: translateY(-5px);
+
+
+}
+@media screen and (max-width:820px){
+
+  .mainImg{
+    display: none;
+  }
+  
+  .main{
+    width: 100%;
+    justify-content: space-between !important;
+  }
+
+  .leftArrow {
+    left: 1%;
+}
+
+.rightArrow {
+    right: 1%;
+}
+}
+
+
+@media screen and (max-width:1000px){
+
+  .imageStory{
+    display: none;
+  }
+
+  .Story{
+    width: 100%;
+  }
+}

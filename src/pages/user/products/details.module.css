@@ -88,4 +88,8 @@ h3::after{
     color:black !important; /* النص يصبح أبيض */
     padding: 10px 15px; /* إضافة padding لزيادة المساحة في التاب */
   }
+
+  .star {
+    color: black !important;
+  }
   

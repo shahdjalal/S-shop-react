@@ -4,7 +4,7 @@ import { Container, FloatingLabel, Form } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { Bounce, toast } from "react-toastify";
 import style from "./register.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";

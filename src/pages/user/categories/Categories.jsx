@@ -8,7 +8,7 @@ export default function Categories() {
 
   const {data,error,isLoading}= UseFetch(`https://ecommerce-node4.onrender.com/categories/active`);
 
-  console.log(data);
+
 
    if(isLoading){
   

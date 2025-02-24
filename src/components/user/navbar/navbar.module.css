@@ -4,10 +4,10 @@
 
 .nav{
 
-   background-color: #111 !important;
+   background-color: #000!important;
     color: #fff;
     z-index: 100;
-
+margin-bottom: 50px;
   text-transform: capitalize;
   
 }
@@ -69,7 +69,7 @@
     color: #bc9c72 !important; 
     font-weight: 600; 
     font-size: 30px;
-    text-decoration: underline;
+  
    
   }
 
@@ -82,3 +82,8 @@
     color: #fff;
   }
 
+
+  .menue{
+   
+    color: #111 !important;
+  }
