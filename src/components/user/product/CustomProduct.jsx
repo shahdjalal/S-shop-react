@@ -24,10 +24,10 @@ export default function CustomProduct({ products }) {
 
   return (
     <div className="container text-white mt-5 mb-5">
-      {/* العنوان في المنتصف والفرز على اليمين */}
+     
       <div className="d-flex justify-content-between align-items-center position-relative mb-3">
         <h1 className={`w-100 text-center ${style.title}`}>Products</h1>
-        <div className="">
+        <div >
           <label className="me-2">Sort by:</label>
           <select
             onChange={(e) => setSortType(e.target.value)}

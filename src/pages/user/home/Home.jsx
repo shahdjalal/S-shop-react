@@ -19,7 +19,7 @@ export default function Home() {
   const prevProductSlide = () => productCarouselRef.current.prev();
 
   const { data, error, isLoading } = UseFetch(
-    `https://ecommerce-node4.onrender.com/products?limit=6 `
+    `https://ecommerce-node4.onrender.com/products?limit=3 `
   );
 
   console.log(data);
@@ -51,7 +51,7 @@ export default function Home() {
             className={`${style.slider} `}
             controls={false}
             indicators={false}
-            interval={3000}
+            interval={1000}
           >
             <Carousel.Item>
               <Row className="gap-4">
