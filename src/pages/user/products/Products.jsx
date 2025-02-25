@@ -1,26 +1,64 @@
-import React from 'react'
-import UseFetch from '../../../components/user/hooks/UseFetch';
-import Loading from '../../../components/user/loading/Loading';
-import { Link } from 'react-router-dom';
-import CustomProduct from '../../../components/user/product/CustomProduct';
+import React, { useState, useEffect } from "react";
+import UseFetch from "../../../components/user/hooks/UseFetch";
+import Loading from "../../../components/user/loading/Loading";
+import CustomProduct from "../../../components/user/product/CustomProduct";
+import { MdOutlineNavigateNext } from "react-icons/md";
+import { GrFormPrevious } from "react-icons/gr";
 
 export default function Products() {
- const {data,error,isLoading}= UseFetch(`https://ecommerce-node4.onrender.com/products?limit=10 `);
+  const [page, setPage] = useState(1);
+  const limit = 6;
+  const [totalPages, setTotalPages] = useState(1); 
+  const [products, setProducts] = useState([]);
 
-  console.log(data);
-
-   if(isLoading){
   
-      return <Loading />
-    }
+  const { data, isLoading, error } = UseFetch(
+    `https://ecommerce-node4.onrender.com/products?page=${page}&limit=${limit}`
+  );
 
+
+  useEffect(() => {
+    if (data && data.products) {
+      setProducts(data.products);
+      setTotalPages(Math.ceil((data.total || 1) / limit)); 
+    }
+  }, [data]);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
-    <>
-    
-    {error? <div className='alert alert-danger'>{error}</div> : ' '  }
-    
- <CustomProduct products={data.products} />
-    </>
-  )
+    <div className="container mt-5">
+      {error && <div className="alert alert-danger">{error}</div>}
+
+      
+      <CustomProduct products={products} />
+
+  {/* pagination */}
+      {products.length > 0 && (
+        <div className="d-flex justify-content-center mt-4">
+          <button
+            className="btn m-1"
+            disabled={page === 1} 
+            onClick={() => setPage((prev) => prev - 1)}
+            style={{ backgroundColor: "#bc9c72 " }}
+          >
+            <GrFormPrevious />
+          </button>
+          <span className="align-self-center mx-3">
+            Page {page} of {totalPages}
+          </span>
+          <button
+            className="btn m-1"
+            disabled={page >= totalPages} 
+            onClick={() => setPage((prev) => prev + 1)}
+            style={{ backgroundColor: "#bc9c72 " }}
+          >
+            <MdOutlineNavigateNext />
+          </button>
+        </div>
+      )}
+    </div>
+  );
 }

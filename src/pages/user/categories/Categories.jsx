@@ -28,7 +28,7 @@ export default function Categories() {
     
     <div className='container mt-5'>
       <h1 className={`text-center m-5 ${style.title}`}>Categories</h1>
-<div className=' row  mb-3 gap-3 justify-content-evenly'>
+<div className=' row  mb-3 m-3 gap-3 justify-content-evenly'>
     {data.categories.map(category =>
   <Link to={`/categories/${category._id}`} className={`col-lg-3 col-md-4  col-sm-12  border border-light-subtle  rounded `}  >
 <div   key={category._id} className={`text-center p-4 ${style.category}`} >

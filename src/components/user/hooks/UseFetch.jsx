@@ -1,34 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function UseFetch(url) {
- 
-    const [data, setData] = useState([{ }]);
-    const [error, setError] = useState(null);
-      const[isLoading,setLOADING]=useState(true)
-  
+  const [data, setData] = useState(null); // تعيين القيمة الافتراضية إلى null
+  const [error, setError] = useState(null);
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
     const getData = async () => {
+      setLoading(true); // تحديد حالة التحميل قبل جلب البيانات
       try {
-        const { data } = await axios.get(url); 
-        setData(data);
+        const response = await axios.get(url);
+        setData(response.data); // تحديث البيانات
         setError(null);
-       
-        console.log(data);
-      } catch (error) {
-        setError(error.message);
-      }finally{
-        setLOADING(false);
+      } catch (err) {
+        setError(err.message || "Failed to fetch data");
+      } finally {
+        setLoading(false);
       }
     };
 
- useEffect(() => {
-getData();
-}, []); 
+    getData();
+  }, [url]); // التحديث عند تغيير `url`
 
-
-
-return {data ,error,isLoading}
-
+  return { data, error, isLoading };
 }
-

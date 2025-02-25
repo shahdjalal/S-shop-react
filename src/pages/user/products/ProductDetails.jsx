@@ -216,7 +216,7 @@ export default function ProductDetails() {
             <h3 className="text-center">REVIEWS</h3>
               <Row className="justify-content-between">
               <Col md={4}>
-                  <h4 style={{ color: "#bc9c72", textAlign: "center" }}>
+                  <h4 className="mt-2" style={{ color: "#bc9c72", textAlign: "center" }}>
                     Add Your Review
                   </h4>
                   <form onSubmit={handleReviewSubmit}>
@@ -263,7 +263,7 @@ export default function ProductDetails() {
                 </Col>
                
                 <Col md={6} >
-                <h4 style={{ color: "#bc9c72", textAlign: "center" }}>
+                <h4 className="mt-2" style={{ color: "#bc9c72", textAlign: "center" }}>
                   Clients Reviews
                   </h4>
                   {product.reviews.map((review) => (
@@ -274,7 +274,7 @@ export default function ProductDetails() {
                     </div>
                   ))}
                 </Col>
-                {/* عمود الفورم */}
+               
                
               </Row>
             </div>

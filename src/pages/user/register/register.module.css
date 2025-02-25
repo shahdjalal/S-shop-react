@@ -127,3 +127,27 @@ color:#bc9c72 !important;
     color: #fff !important;
   }
 
+
+  @media screen  and (max-width:1090px){
+
+    .register{
+ width: 100%;
+ margin-left: 2%;
+ margin-right: 2%;
+    }
+
+ 
+    
+  }
+
+  @media screen  and (max-width:645px){
+
+    .register{
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+    }
+
+ 
+    
+  }
