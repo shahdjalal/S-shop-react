@@ -12,7 +12,6 @@ import CategoryProducts from "./pages/user/products/CategoryProducts";
 import ProductDetails from "./pages/user/products/ProductDetails";
 import Cart from "./pages/user/cart/Cart";
 import { ToastContainer } from "react-bootstrap";
-import ProtectedRoute from "./components/user/protectedRoute";
 import CartContextProvider from "./components/user/context/CartContext";
 import Profile from "./pages/user/profile/Profile";
 import Info from "./pages/user/profile/Info";
@@ -23,6 +22,7 @@ import AuthProtectedRout from "./components/user/AuthProtectedRout";
 import SendCode from "./pages/user/login/SendCode";
 import ResetPassword from "./pages/user/login/ResetPassword";
 import Order from "./pages/user/order/Order";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 
 export default function App() {
