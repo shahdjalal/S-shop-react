@@ -22,7 +22,7 @@ import AuthProtectedRout from "./components/user/AuthProtectedRout";
 import SendCode from "./pages/user/login/SendCode";
 import ResetPassword from "./pages/user/login/ResetPassword";
 import Order from "./pages/user/order/Order";
-import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+import ProtectedRoute from "./components/user/ProtectedRoute/ProtectedRoute";
 
 
 export default function App() {
