@@ -178,9 +178,9 @@ export default function Home() {
                   </h6>
                   <h4>SMARTPHONE</h4>
                   <h4 className={`  ${style.price}`}>1500$</h4>
-                  <button className="mt-6 border-2 border-white text-white px-3 py-2  text-lg hover:bg-white hover:text-black transition">
+                  <Link to='/products' className="mt-6 border-2 btn border-white text-white px-3 py-2  text-lg hover:bg-white hover:text-black transition">
                     SHOP NOW
-                  </button>
+                  </Link>
                 </div>
                 <div
                   className={`${style.product} col-md-5 col-sm-12 px-3 py-4 d-flex flex-column gap-2 justify-content-center align-items-start`}
@@ -190,9 +190,9 @@ export default function Home() {
                   </h6>
                   <h4>SMARTPHONE</h4>
                   <h4 className={`  ${style.price}`}>1500$</h4>
-                  <button className="mt-6 border-2 border-white text-white px-4 py-2 text-lg hover:bg-white hover:text-black transition">
+                  <Link to='/products' className="mt-6 border-2 btn border-white text-white px-3 py-2  text-lg hover:bg-white hover:text-black transition">
                     SHOP NOW
-                  </button>
+                  </Link>
                 </div>
               </Row>
             </Carousel.Item>
@@ -206,9 +206,9 @@ export default function Home() {
                   </h6>
                   <h4>SMARTPHONE</h4>
                   <h4 className={`  ${style.price}`}>1500$</h4>
-                  <button className="mt-6 border-2 border-white text-white px-3 py-2  text-lg hover:bg-white hover:text-black transition">
+                  <Link to='/products' className="mt-6 border-2 btn border-white text-white px-3 py-2  text-lg hover:bg-white hover:text-black transition">
                     SHOP NOW
-                  </button>
+                  </Link>
                 </div>
                 <div
                   className={`${style.product} col-md-5 col-sm-12 px-3 py-4 d-flex flex-column gap-2 justify-content-center align-items-start`}
@@ -218,9 +218,9 @@ export default function Home() {
                   </h6>
                   <h4>SMARTPHONE</h4>
                   <h4 className={`  ${style.price}`}>1500$</h4>
-                  <button className="mt-6 border-2 border-white text-white px-3 py-2 text-lg hover:bg-white hover:text-black transition">
+                  <Link to='/products' className="mt-6 border-2 btn border-white text-white px-3 py-2  text-lg hover:bg-white hover:text-black transition">
                     SHOP NOW
-                  </button>
+                  </Link>
                 </div>
               </Row>
             </Carousel.Item>
@@ -234,9 +234,9 @@ export default function Home() {
                   </h6>
                   <h4>SMARTPHONE</h4>
                   <h4 className={`  ${style.price}`}>1500$</h4>
-                  <button className="mt-6 border-2 border-white text-white px-3 py-2  text-lg hover:bg-white hover:text-black transition">
+                  <Link to='/products' className="mt-6 border-2 btn border-white text-white px-3 py-2  text-lg hover:bg-white hover:text-black transition">
                     SHOP NOW
-                  </button>
+                  </Link>
                 </div>
                 <div
                   className={`${style.product} col-md-5 col-sm-12 px-3 py-4 d-flex flex-column gap-2 justify-content-center align-items-start`}
@@ -246,9 +246,9 @@ export default function Home() {
                   </h6>
                   <h4>SMARTPHONE</h4>
                   <h4 className={`  ${style.price}`}>1500$</h4>
-                  <button className="mt-6 border-2 border-white text-white px-3 py-2 text-lg hover:bg-white hover:text-black transition">
+                  <Link to='/products' className="mt-6 border-2 border-white text-white px-3 py-2 btn text-lg hover:bg-white hover:text-black transition">
                     SHOP NOW
-                  </button>
+                  </Link>
                 </div>
               </Row>
             </Carousel.Item>
